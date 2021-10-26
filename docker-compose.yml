@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: "testdb"
+
+  test-app-nest:
+    image: test-app-nest-image:master
+    container_name: test-app-nest
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongo

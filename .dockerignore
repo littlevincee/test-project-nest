@@ -1,0 +1,15 @@
+Dockerfile
+node_modules/
+package-lock.json
+.git
+.gitignore
+MakeFile
+.env
+docker-compose*
+Docker/docker-compose*
+README.md
+src/
+test/
+.prettierrc
+yarn.lock
+logs
