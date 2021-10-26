@@ -4,6 +4,11 @@ Test App Backend uses [Nest](https://github.com/nestjs/nest) framework and it is
 
 ## Prequisite
 
+Open these files to make sure it is using `LF`, the end of line sequence:
+
+1. wait-for-it.sh - the usage of this file is to wait until the mongodb is up and running before starting the `test-app-nest` container
+2. start.sh - kick start the `test-app-nest` backend
+
 Run `yarn install` then `yarn build` before trying to host the backend app in docker
 
 ## Running the app dockerised
